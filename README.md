@@ -1,13 +1,33 @@
-# Sample Hardhat Project
+# Mainnet Forking Using UniSwapV2Router
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+The Project interface was gotten from UniSwapV2Router From UniSwap Opensource.
 
-Try running some of the following tasks:
+Before you Perform a Mainnet Forking do the following:
+
+Get a The UniSwap **ROUTER_ADDRESS** 
+**USDC_ADDRESS** 
+**DAI_ADDRESS**
+
+Impersonate an Account Holding More Tokens.
+
+Name the Token Address **TOKEN_HOLDER**
+
+After this Setup a .env to carry *ALCHEMY_MAINNET_API_KEY_URL OR INFURA*
+
+Create a Script Folder add scripts 
+add Mainnet Forking Script
+    - Depending on the Functions. 
+        Note: I added interaction for Add Liquidity and SwapExact Tokens For Exact Tokens. 
+
+# To clone or Fork my Project ?
+
+run:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+
+npm install
+npx hardhat run scripts/_____.ts //Do this after setting_up .env, scripts and ...
+
 ```
+
+I hope this helps!! Follow
